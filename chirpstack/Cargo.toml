@@ -20,7 +20,7 @@
   serde_urlencoded = "0.7"
   humantime-serde = "1.1"
   toml = "0.8"
-  handlebars = "6.2"
+  handlebars = "6.3"
 
   # Database
   email_address = "0.2"
