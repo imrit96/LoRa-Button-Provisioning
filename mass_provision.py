@@ -29,7 +29,7 @@ application_client = application_pb2_grpc.ApplicationServiceStub(channel)
 # Function to get application ID dynamically
 def get_application_id(application_name):
     metadata = [("authorization", f"Bearer {API_KEY}")]
-    request = application_pb2.ListApplicationsRequest(limit=10, offset=0, tenant_id="52f14cd4-c6f1-4fbd-8f87-4025e1d49242")
+    request = application_pb2.ListApplicationsRequest(limit=10, offset=0, tenant_id="<YOUR-TENANT-ID>")
     
     response = application_client.List(request, metadata=metadata)
     
@@ -55,7 +55,7 @@ def create_device(dev_eui, name, description, app_key):
             name=name,
             description=description,
             application_id=APPLICATION_ID,
-            device_profile_id="c9716921-38bc-4d3c-807c-d0f9bbd772a8"
+            device_profile_id="<YOUR-DEVICE-PROFILE-ID>"
         )
     )
 
