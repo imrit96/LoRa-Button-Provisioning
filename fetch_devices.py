@@ -6,7 +6,7 @@ import api.device_pb2_grpc as device_pb2_grpc
 CHIRPSTACK_SERVER = "127.0.0.1:8080"
 
 # API Key (Replace with your actual API key)
-API_KEY = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjaGlycHN0YWNrIiwiaXNzIjoiY2hpcnBzdGFjayIsInN1YiI6ImJiN2Q4ZDkyLWRmN2YtNGQxOS05MzdmLWE1Nzk2MDAwNTU3NiIsInR5cCI6ImtleSJ9.w6CdE1xOEy_KyUSu31oO6urTxF2aTVqY6rRLT22p5ZU"
+API_KEY = "YOUR-API-KEY"
 
 # Create a gRPC channel to connect to ChirpStack
 channel = grpc.insecure_channel(CHIRPSTACK_SERVER)
