@@ -14,7 +14,7 @@ def get_api_key(file_path="test-key1.txt"):
         with open(file_path, "r") as file:
             return file.read().strip()  # Read the key and remove any extra spaces/newlines
     except FileNotFoundError:
-        print("Error: API key file not found. Please create 'api_key.txt' and add the API key.")
+        print("Error: API key file not found. Please create 'test-key1.txt' and add the API key.")
         exit(1)
 
 # Load API key from file
